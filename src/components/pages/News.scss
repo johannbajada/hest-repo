@@ -1,0 +1,36 @@
+/*========
+NEWS
+==========*/
+$blue: #061940;
+$red: #d94343;
+$black: #0f0f0f;
+$gray: #bcbcbc;
+
+.news {
+  margin-bottom: 5em;
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 2em;
+    .title-h1 {
+      color: $red;
+      font-size: 3rem;
+      padding-left: 0.5em;
+    }
+    img {
+      height: 2em;
+    }
+  }
+
+  @media (min-width: 750px) {
+    .title {
+      .title-h1 {
+        font-size: 4rem;
+      }
+      img {
+        height: 2.6em;
+      }
+    }
+  }
+}

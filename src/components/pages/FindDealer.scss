@@ -1,0 +1,94 @@
+/*========
+find dealer
+==========*/
+
+$blue: #061940;
+$red: #d94343;
+$black: #0f0f0f;
+$gray: #bcbcbc;
+
+.find-dealer {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  max-width: 100%;
+
+  .find-dealer-title {
+    margin-bottom: 1.4em;
+  }
+  .find-par-1 {
+    margin-bottom: 4em;
+    text-align: centerx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .find-par-1-1 {
+      img {
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
+    .find-par-1-2 {
+      P {
+        margin-bottom: 1.5em;
+      }
+      button {
+        background: none;
+        border: 1px solid $red;
+        padding: 0.5em 1em;
+        color: $red;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      button:hover {
+        color: #fff;
+        background-color: $red;
+      }
+    }
+  }
+
+  .find-par-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 8em;
+    .find-par-2-2 {
+      img {
+        width: 20%;
+      }
+    }
+  }
+
+  @media (min-width: 750px) {
+    .find-dealer-title {
+      font-size: 4rem;
+    }
+    .find-par-1 {
+      margin-bottom: 0em;
+      text-align: left;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .find-par-1-1 {
+        width: 20%;
+      }
+      .find-par-1-2 {
+        width: 80%;
+      }
+    }
+
+    .find-par-2 {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .find-par-2-1 {
+        width: 60%;
+      }
+      .find-par-2-2 {
+        width: 25%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

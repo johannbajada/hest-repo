@@ -1,0 +1,50 @@
+/*========
+fleet
+==========*/
+
+$blue: #061940;
+$red: #d94343;
+$black: #0f0f0f;
+$gray: #bcbcbc;
+
+.fleet {
+  margin-bottom: 10em;
+
+  .fleet-title {
+    margin-bottom: 1em;
+    font-size: 2rem;
+  }
+  .fleet-slide-show {
+    // border: 1px solid red;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      //    border: 1px solid blue;
+      width: 40%;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .fa {
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 750px) {
+    .fleet-title {
+      font-size: 4rem;
+    }
+    .fleet-slide-show {
+      .fa {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

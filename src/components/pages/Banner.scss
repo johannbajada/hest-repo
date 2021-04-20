@@ -1,0 +1,66 @@
+/*========
+banner
+==========*/
+
+$blue: #061940;
+$red: #d94343;
+$black: #0f0f0f;
+$gray: #bcbcbc;
+
+.banner {
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 0;
+  margin-bottom: 10em;
+
+  .banner-col-1 {
+    width: 50%;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .banner-col-2 {
+    width: 45%;
+    margin-right: 0.4em;
+    h1 {
+      text-align: left;
+      color: #fff;
+      font-weight: 500;
+      font-size: 3rem;
+    }
+    h2 {
+      color: $red;
+      font-size: 1rem;
+      word-spacing: 0.6rem;
+      font-weight: 100;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .banner {
+    align-items: flex-start;
+
+    .banner-col-1 {
+      img {
+        width: 70%;
+      }
+    }
+
+    .banner-col-2 {
+      //      border: 1px solid red;
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
